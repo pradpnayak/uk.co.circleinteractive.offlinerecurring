@@ -62,12 +62,12 @@ function offlinerecurring_civicrm_entityTypes(&$entityTypes) {
 function offlinerecurring_civicrm_permission(&$permissions) {
   $prefix = ts('CiviCRM') . ': ';
   $permissions['add offline recurring payments'] = [
-    $prefix . ts('add offline recurring payments'),
-    ts('Add Offline Recurring Contribution(s)'),
+    'label' => $prefix . E::ts('add offline recurring payments'),
+    'description' => E::ts('Add Offline Recurring Contribution(s)'),
   ];
   $permissions['edit offline recurring payments'] = [
-    $prefix . ts('edit offline recurring payments'),
-    ts('Update Offline Recurring Contribution(s)'),
+    'label' => $prefix . E::ts('edit offline recurring payments'),
+    'description' => E::ts('Update Offline Recurring Contribution(s)'),
   ];
 }
 
